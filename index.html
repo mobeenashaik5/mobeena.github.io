@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobeena shaik curriculum vitae</title>
+    <style>
+        /* Style for collapsible sections */
+        .collapsible {
+            background-color: #777;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            position: relative;
+        }
+
+        .collapsible::after {
+            content: '\25B6'; /* Unicode character for right-pointing arrow */
+            position: absolute;
+            right: 10px;
+            transition: transform 0.3s;
+        }
+
+        .active::after {
+            transform: rotate(90deg);
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        }
+
+        /* Style for profile image */
+        #profile-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Curriculum vitae
+</h1>
+
+<img src="download.jpg.png" alt="Profile Image" id="profile-image">
+<h2>Mobeena shaik</h2>
+
+<button class="collapsible">Career objective</button>
+<div class="content">
+  <p>seeking a challenging position in a reputed organization where I can learn new skills, expand my knowledge, and leverage my learnings..</p>
+</div>
+
+<button class="collapsible">Education</button>
+<div class="content">
+  <p><div>
+    <h2>Masters [pursuing]</h2>
+    <p>SRM University AP</p>
+    <p>Stream: Molecular biology and Biotechnology</p>
+</div>
+
+<div>
+    <h2>Bachelors of Science [2020 - 2023]</h2>
+    <p>Harshini DEGREE AND PG COLLEGE CHIKKADPALLY HYDERABAD.</p>
+    <p>Stream: Biotechnology, microbiology and Chemistry</p>
+</div>
+
+<div>
+    <h2>Intermediate [2018-2020]</h2>
+    <p>Sri Chaitanya junior college, ongole</p>
+    <p>Stream: BIPC</p>
+</div>
+
+<div>
+    <h2>Board of Secondary Education</h2>
+    <p>Qis public school,ongole</p>
+</div>
+</p>
+</div>
+
+<button class="collapsible">Technical skills</button>
+<div class="content">
+  <p>homology modeling</p>
+  <p>molecular docking</p>
+  <p>MS Office</p>
+  <p>Linux</p>
+</div>
+
+<button class="collapsible">Projects</button>
+<div class="content">
+  <p> Blood grouping and awareness of blood donation
+</p>
+  <p>: : We had conducted an awareness program on blood grouping and blood donation in the village named Mukthinuthalapadu which is located near Ongole, Prakasam district with the support of Sacchivalayam staff. we created awareness among people by interacting with the members of the village.</p>
+</div>
+
+<button class="collapsible">Hobbies</button>
+<div class="content">
+  <p>Pencile art</p>
+  <p>singing</p>
+  <p>Craft work</p>
+</div>
+
+<button class="collapsible">Contact Information</button>
+<div class="content">
+  <p>Address:Bilal nagar , ongole</p>
+  <p>G-mail address: mobeenashaik538@gmail.com</p>
+</div>
+
+<script>
+    // JavaScript to toggle collapsible sections
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            } 
+        });
+    }
+</script>
+
+</body>
+</html>
